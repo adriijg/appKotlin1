@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ComActivity</string>
+    <string name="activity_name_main">Activity 1</string>
+    <string name="activity_name_two">Activity 2</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellidos</string>
+    <string name="identification">DNI</string>
+    <string name="btn_txt_send">Enviar</string>
+    <string name="btn_txt_back">Volver</string>
+</resources>
