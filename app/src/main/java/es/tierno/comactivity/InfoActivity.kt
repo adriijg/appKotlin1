@@ -3,6 +3,7 @@ package es.tierno.comactivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,10 +23,14 @@ class InfoActivity : AppCompatActivity() {
         val apellidos = extras!!.getString("apellidos")
         val dni = extras!!.getString("dni")
 
-        val msg = "$nombre $apellidos $dni"
+        val editNombre: EditText = findViewById(R.id.txtName2)
+        val editApellido: EditText = findViewById(R.id.txtApellidos2)
+        val editDni: EditText = findViewById(R.id.txtDNI2)
 
-        val toast = Toast.makeText(this, msg, Toast.LENGTH_LONG)
-        toast.show()
+        editNombre.setText(nombre)
+        editApellido.setText(apellidos)
+        editDni.setText(dni)
+
 
         btn.setOnClickListener { view ->
             val intent = Intent(this, MainActivity::class.java)
